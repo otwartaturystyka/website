@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://otwartaturystyka.netlify.app/*"
+  to = "https://otwartaturystyka.pl/:splat"
+  status = 301
+  force = true
