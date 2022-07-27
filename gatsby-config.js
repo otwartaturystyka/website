@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#669900`,
         theme_color: `#669900`,
         display: `minimal-ui`,
-        icon: `src/images/ic_discover_rudy.png`,
+        icon: `src/images/appicon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

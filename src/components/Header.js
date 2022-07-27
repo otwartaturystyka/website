@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import discoverRudy from "../images/ic_discover_rudy.png"
+import discoverRudy from "../images/appicon.png"
 import { Link } from "gatsby"
 
 const NavLink = styled(Link)`
