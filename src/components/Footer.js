@@ -31,7 +31,7 @@ const Footer = () => (
         padding-left: 0.5rem;
       `}
     >
-      <a href="https://otwartaturystyka.pl/polityka_prywatnosci.pdf">
+      <a href="https://otwartaturystyka.pl/polityka_prywatnosci.txt">
         Polityka prywatności
       </a>
     </div>

@@ -1,0 +1,33 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Polityka prywatności aplikacji Otwarta Turystyka  *
+* * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Ten dokument opisuje, jakie dane Użytkownika są zbierane przez Twórcę aplikacji
+(Bartłomiej Pacia) w aplikacji Otwarta Turystyka Rudy oraz przez niego
+wykorzystywane.
+
+* Adres e-mail:
+    Logując się do aplikacji za pomocą Google lub Apple, udostępniasz Twórcy
+    swój adres e-mail. Jest on wykorzystywany jedynie w celu oszacowania liczby
+    użytkowników. Nie jest on udostępniany przez Twórcę żadnym osobom trzecim.
+
+* Lokalizacja:
+    W aplikacji istnieje funkcja o nazwie Mapa, która pokazuje lokalizację
+    użytkownika na mapie. Lokalizacja nie jest w żaden sposób zapisywana ani
+    przetwarzana przez Twórcę oprócz danych, które Użytkownik sam stworzy.
+
+    Do takich danych zalicza się jedynie odkrycie przez Użytkownika miejsca.
+    Dokładny czas i miejsce wizyty są wtedy zapisywane w bazie danych i widoczne
+    dla wszystkich innych Użytkowników aplikacji.
+
+* Dane o urządzeniu:
+    Jeśli w aplikacji wystąpi błąd, niektóre dane o urządzeniu Użytkownika są
+    wysyłane do Twórcy w celu ułatwienia procesu naprawienia błędu. Zbierane
+    dane o urządzeniu:
+
+    * model urządzenia
+    * wersja systemu operacyjnego
+    * wolna pamięć RAM i ROM
+
+Użytkownik może w każdej chwili usunąć swoje konto wraz ze wszystkimi
+stworzonymi przez siebie danymi z poziomu aplikacji.
