@@ -16,12 +16,14 @@ const StyledWrapper = styled.div`
 `
 
 const DemoImages = () => {
-  const image1 = useImage().demo1.childImageSharp.gatsbyImageData
-  const image2 = useImage().demo2.childImageSharp.gatsbyImageData
-  const image3 = useImage().demo3.childImageSharp.gatsbyImageData
-  const image4 = useImage().demo4.childImageSharp.gatsbyImageData
-  const image5 = useImage().demo5.childImageSharp.gatsbyImageData
-  const image6 = useImage().demo6.childImageSharp.gatsbyImageData
+  const image1 = useImage().demo1
+  const image2 = useImage().demo2
+  const image3 = useImage().demo3
+  const image4 = useImage().demo4
+  const image5 = useImage().demo5
+  const image6 = useImage().demo6
+
+  let images = [image1, image2, image3, image4, image5, image6]
 
   return (
     <>
@@ -33,51 +35,16 @@ const DemoImages = () => {
           justify-content: center;
         `}
       >
-        <GatsbyImage
-          image={image1}
-          css={`
-            margin: 0.5em;
-          `}
-        />
-        <GatsbyImage
-          image={image2}
-          css={`
-            margin: 0.5em;
-          `}
-        />
-        <GatsbyImage
-          image={image3}
-          css={`
-            margin: 0.5em;
-          `}
-        />
-      </div>
-      <div
-        css={`
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: 1em;
-          justify-content: center;
-        `}
-      >
-        <GatsbyImage
-          image={image4}
-          css={`
-            margin: 0.5em;
-          `}
-        />
-        <GatsbyImage
-          image={image5}
-          css={`
-            margin: 0.5em;
-          `}
-        />
-        <GatsbyImage
-          image={image6}
-          css={`
-            margin: 0.5em;
-          `}
-        />
+        {images.map(image => (
+          <GatsbyImage
+            key={image.name}
+            image={image.childImageSharp.gatsbyImageData}
+            alt=""
+            css={`
+              margin: 0.5em;
+            `}
+          />
+        ))}
       </div>
     </>
   )
@@ -90,7 +57,7 @@ const IndexPage = () => (
         css={`
           font-weight: bold;
           padding-top: 0.5em;
-          padding-bottom: 0.5em;
+          padding-bottom: 0.3em;
         `}
         isBig
       >
@@ -98,9 +65,7 @@ const IndexPage = () => (
       </H1>
       <p
         css={`
-          text-align: center;
-          padding-top: 1em;
-          padding-bottom: 1em;
+          padding-bottom: 0.5em;
           font-size: 2em;
         `}
       >

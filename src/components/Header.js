@@ -25,8 +25,7 @@ const Header = () => (
       }
     `}
   >
-    <a
-      href="/"
+    <div
       css={`
         display: flex;
         align-items: center;
@@ -43,12 +42,13 @@ const Header = () => (
       <NavLink
         css={`
           font-weight: bold;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
         `}
+        to={"/"}
       >
         Otwarta Turystyka
       </NavLink>
-    </a>
+    </div>
     <nav
       css={`
         display: flex;
