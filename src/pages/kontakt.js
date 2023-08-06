@@ -3,32 +3,29 @@ import Layout from "../layout/Layout"
 import styled from "styled-components"
 
 const StyledWrapper = styled.div`
-  display: flex;
-  align-self: flex-start;
-  flex-direction: column;
-
   padding-top: 1em;
-  padding-left: 1em;
+
+  max-width: 800px;
+  line-height: 1.5;
 `
 
 const DownloadPage = () => (
   <Layout>
     <StyledWrapper>
-      <p
-        css={`
-          margin: 0;
-          font-size: 1.5em;
-        `}
-      >
-        Bartek Pacia
+      <p>
+        Masz pomysł, jak mogę ulepszyć Otwartą Turystykę? Znalazłeś błąd? A może
+        uważasz, że brakuje jakiegoś miejsca? Przyszła Tobie na myśl ciekawa
+        funkcjonalność, którą mógłbym dodać? Z chęcią odpowiem na Twoje pytania
+        i krytykę.
       </p>
       <p
         css={`
-          margin: 0;
-          font-size: 1.2em;
+          padding: 1em 0;
         `}
       >
-        barpac02@gmail.com
+        Napisz maila na{" "}
+        <a href="mailto:barpac02@gmail.com">barpac02@gmail.com</a>, a na pewno
+        się do Ciebie odezwę.
       </p>
     </StyledWrapper>
   </Layout>
