@@ -4,8 +4,7 @@ const Footer = () => (
   <footer
     css={`
       background: #000;
-      padding-top: 1.2rem;
-      padding-bottom: 1.2rem;
+      padding: 2em;
       justify-content: space-between;
       display: grid;
       grid-template-columns: 1fr;
@@ -17,24 +16,14 @@ const Footer = () => (
       }
     `}
   >
-    <div
-      css={`
-        padding-top: 0.5rem;
-        padding-left: 0.5rem;
-      `}
-    >
+    <small>
       stworzył <a href="http://bartekpacia.github.io">Bartek Pacia</a>
-    </div>
-    <div
-      css={`
-        padding-top: 0.5rem;
-        padding-left: 0.5rem;
-      `}
-    >
+    </small>
+    <small>
       <a href="https://otwartaturystyka.pl/polityka_prywatnosci.txt">
         Polityka prywatności
       </a>
-    </div>
+    </small>
   </footer>
 )
 
