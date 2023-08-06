@@ -18,7 +18,7 @@ const Button = styled.button`
     background: ${props => props.theme.colors.white};
   }
 
-  :hover {
+  &:hover {
     color: white;
     background-color: ${props => props.theme.colors.primaryDark};
   }
