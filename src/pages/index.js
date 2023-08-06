@@ -26,27 +26,24 @@ const DemoImages = () => {
   let images = [image1, image2, image3, image4, image5, image6]
 
   return (
-    <>
-      <div
-        css={`
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: 1em;
-          justify-content: center;
-        `}
-      >
-        {images.map(image => (
-          <GatsbyImage
-            key={image.name}
-            image={image.childImageSharp.gatsbyImageData}
-            alt=""
-            css={`
-              margin: 0.5em;
-            `}
-          />
-        ))}
-      </div>
-    </>
+    <div
+      css={`
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em 0;
+        justify-content: center;
+        row-gap: 1em;
+        column-gap: 1em;
+      `}
+    >
+      {images.map(image => (
+        <GatsbyImage
+          key={image.name}
+          image={image.childImageSharp.gatsbyImageData}
+          alt=""
+        />
+      ))}
+    </div>
   )
 }
 
