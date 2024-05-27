@@ -12,9 +12,6 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
 
-      - name: Generate website
-        run: ./generate
-
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
