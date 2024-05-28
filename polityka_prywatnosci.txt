@@ -3,7 +3,7 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 Ten dokument opisuje, jakie dane Użytkownika są zbierane przez Twórcę aplikacji
-(Bartłomiej Pacia) w aplikacji Otwarta Turystyka Rudy oraz przez niego
+(Bartłomiej Pacia) w aplikacji Otwarta Turystyka oraz przez niego
 wykorzystywane.
 
 * Adres e-mail:
