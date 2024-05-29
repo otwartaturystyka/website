@@ -9,9 +9,11 @@
   --font-sans: "Lato", sans-serif;
 }
 
-[theme="dark"] {
-  --color-background: #0f1c21;
-  --color-on-background: whitesmoke;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0f1c21;
+    --color-on-background: whitesmoke;
+  }
 }
 
 body {
