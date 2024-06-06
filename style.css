@@ -195,7 +195,7 @@ footer {
   border: 0.1rem solid var(--color-primary-dark);
   border-radius: 0.5rem;
   text-decoration: none;
-  color: white;
+  color: var(--color-on-background);
   /* background-color: var(--color-primary); */
   transition: background-color 0.2s ease-in-out;
 }
