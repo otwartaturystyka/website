@@ -34,3 +34,35 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-vps:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v7
+        with:
+          name: "github-pages" # Default name of the artifact uploaded by actions/upload-pages-artifact
+
+      - name: Extract artifact
+        run: |
+          mkdir build/
+          tar -xf artifact.tar -C build/
+          chmod 555 -R build/
+
+      - name: List files in build/
+        run: ls -lAhF build/
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H vps1.pacia.tech >> ~/.ssh/known_hosts
+
+      - name: Remove old files on server
+        run: ssh charlie@vps1.pacia.tech 'rm -rf /var/www/otwartaturystyka'
+
+      - name: Copy new files to server
+        run: scp -r ./build/* charlie@vps1.pacia.tech:/var/www/otwartaturystyka/
